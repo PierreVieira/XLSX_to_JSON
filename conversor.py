@@ -44,7 +44,7 @@ def criar_atomo(nome, descricao, classificacao, numero_atomico, simbolo_atomico,
             'valencia': valencia,
             'quadra': quadra
         },
-        'composição': {
+        'composicao': {
             'universo': formatar_porcentagem(composicao_universo),
             'sol': formatar_porcentagem(composicao_sol),
             'oceano': formatar_porcentagem(composicao_oceano),
