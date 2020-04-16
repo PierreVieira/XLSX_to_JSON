@@ -24,23 +24,23 @@ def criar_atomo(nome, descricao, classificacao, numero_atomico, simbolo_atomico,
                 quadra, composicao_universo, composicao_sol, composicao_oceano, composicao_corpo_humano,
                 composicao_crosta_terrestre, composicao_meteoritos):
     return {
-        'visao geral': {
+        'visao_geral': {
             'nome': nome,
             'descricao': descricao,
             'classificacao': classificacao,
-            'numero atomico': numero_atomico,
+            'numero_atomico': numero_atomico,
             'simbolo atomico': simbolo_atomico,
             'numero de massa': numero_de_massa,
             'grupo': grupo,
             'periodo': periodo,
-            'ano da descoberta': ano_da_descoberta,
-            'numero cas': numero_cas,
-            'quem descobriu': quem_descobriu
+            'ano_da_descoberta': ano_da_descoberta,
+            'numero_cas': numero_cas,
+            'quem_descobriu': quem_descobriu
         },
-        'propriedades físicas': {
+        'propriedades_físicas': {
             'densidade': densidade,
-            'ponto de fusao': ponto_de_fusao,
-            'ponto de ebulicao': ponto_de_ebulicao,
+            'ponto_de_fusao': ponto_de_fusao,
+            'ponto_de_ebulicao': ponto_de_ebulicao,
             'valencia': valencia,
             'quadra': quadra
         },
@@ -48,8 +48,8 @@ def criar_atomo(nome, descricao, classificacao, numero_atomico, simbolo_atomico,
             'universo': formatar_porcentagem(composicao_universo),
             'sol': formatar_porcentagem(composicao_sol),
             'oceano': formatar_porcentagem(composicao_oceano),
-            'corpo humano': formatar_porcentagem(composicao_corpo_humano),
-            'crosta terrestre': formatar_porcentagem(composicao_crosta_terrestre),
+            'corpo_humano': formatar_porcentagem(composicao_corpo_humano),
+            'crosta_terrestre': formatar_porcentagem(composicao_crosta_terrestre),
             'meteoritos': formatar_porcentagem(composicao_meteoritos)
         }
     }
