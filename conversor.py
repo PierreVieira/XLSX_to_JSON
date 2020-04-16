@@ -19,10 +19,11 @@ def escrever_json(objeto):
         json.dump(objeto, file_json, ensure_ascii=False)
 
 
-def criar_atomo(nome, descricao, classificacao, numero_atomico, simbolo_atomico, numero_de_massa, grupo, periodo,
-                ano_da_descoberta, numero_cas, quem_descobriu, densidade, ponto_de_fusao, ponto_de_ebulicao, valencia,
-                quadra, composicao_universo, composicao_sol, composicao_oceano, composicao_corpo_humano,
-                composicao_crosta_terrestre, composicao_meteoritos):
+def criar_atomo(*args):
+    argumentos_pre_formatados = tuple(map(lambda info: None if info == 'X' or info == 'x' else info, args))
+    nome, descricao, classificacao, numero_atomico, simbolo_atomico, numero_de_massa, grupo, periodo, ano_da_descoberta,\
+    numero_cas, quem_descobriu, densidade, ponto_de_fusao, ponto_de_ebulicao, valencia, quadra, composicao_universo,\
+    composicao_sol, composicao_oceano, composicao_corpo_humano, composicao_crosta_terrestre, composicao_meteoritos = argumentos_pre_formatados
     return {
         'visao geral': {
             'nome': nome,
